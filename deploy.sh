@@ -12,6 +12,6 @@ docker push hamza156/docker-react-app-worker-image:$SHA
 
 kubectl apply -f configurations
 
-kubectl set image deployments/server-deployment server=hamza156/docker-react-app-client-image:$SHA
+kubectl set image deployments/client-deployment server=hamza156/docker-react-app-client-image:$SHA
 kubectl set image deployments/server-deployment server=hamza156/docker-react-app-server-image:$SHA
-kubectl set image deployments/server-deployment server=hamza156/docker-react-app-worker-image:$SHA
+kubectl set image deployments/worker-deployment server=hamza156/docker-react-app-worker-image:$SHA
